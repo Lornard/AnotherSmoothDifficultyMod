@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Another Smooth Difficulty Mod</Name>
+    <Guid>2db2701a-4a43-4cae-ad2e-6b47f66debaa</Guid>
+    <ProjectGuid>9e081b1a-be40-4d80-a841-4e9d71b0ec7f</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Removes early units, but gives higher initial and increasing bonus to AI.</Teaser>
+    <Description>Removes all initial units to AI, but increases Science and Culture bonus to +12% per difficulty above prince. Also adds a 5% initial food bonus per difficulty above prince.</Description>
+    <Authors>lornard</Authors>
+    <SpecialThanks>RushSecond, schwarzpol, Kaige Lindberg</SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
+</Associations>]]></AssociationData>
+    <AssemblyName>EmptyMod1</AssemblyName>
+    <RootNamespace>EmptyMod1</RootNamespace>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Requirements"><File priority="1">Core/Requirements.sql</File><File>Core/AnotherSmoothDifficulty.sql</File><File>Core/Amenities.sql</File><File>Core/Combat.sql</File><File>Core/EraScaling.sql</File><File>Core/LowDifficultPlayer.sql</File></UpdateDatabase><UpdateText id="Text"><File>Localization/Text.sql</File></UpdateText></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Core" />
+    <Folder Include="Localization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core\Amenities.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\AnotherSmoothDifficulty.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Combat.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\EraScaling.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\LowDifficultPlayer.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Requirements.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\Text.sql">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
