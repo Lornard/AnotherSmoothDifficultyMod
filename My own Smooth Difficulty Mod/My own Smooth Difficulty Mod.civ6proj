@@ -5,9 +5,14 @@
     <Name>Another Smooth Difficulty Mod</Name>
     <Guid>2db2701a-4a43-4cae-ad2e-6b47f66debaa</Guid>
     <ProjectGuid>9e081b1a-be40-4d80-a841-4e9d71b0ec7f</ProjectGuid>
-    <ModVersion>1</ModVersion>
+    <ModVersion>2</ModVersion>
     <Teaser>Removes early units, but gives higher initial and increasing bonus to AI.</Teaser>
-    <Description>Removes all initial units to AI, but increases Science and Culture bonus to +12% per difficulty above prince. Also adds a 5% initial food bonus per difficulty above prince.</Description>
+    <Description>Removes all initial units and tech boosts to the AI, but gives an stacking 2% bonus to gold, science, culture and food for each era past Ancient. Also adds a 5% initial food bonus per difficulty above prince.
+
+Also gives low difficulty players the same bonuses that the AI would gain on the Ancient Era (i.e., no stacking bonuses) in a game from the corresponding high difficulty: 
+- Warlord gains King bonuses, Chieftain gains Emperor bonuses; and Settler gains Immortal bonuses.
+
+This mod was made analyzing, tweaking and merging many other mods with a similar idea, namely the ones by RushSecond, schwarzpol, Kaige Lindberg.</Description>
     <Authors>lornard</Authors>
     <SpecialThanks>RushSecond, schwarzpol, Kaige Lindberg</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>

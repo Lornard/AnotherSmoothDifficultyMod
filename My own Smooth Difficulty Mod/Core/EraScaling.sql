@@ -1,8 +1,8 @@
 -- Based on RushSecond's Smoother Difficulty 1.4, updated by schwarzpol.
 -- High Difficult AI gains progressive bonuses to Yields per era:
--- +1 per difficulty to Science, Culture and Gold. +2 per difficulty to Food
--- Future (8 eras from beggining) Deity (4 Deltas from Prince) gets a total of 80% Science/Culture: 48% (12 base * 4 delta) + 32% (1 base * 8 eras * 4 delta) 
--- +84% Food: 20% (5 base * 4 delta) + 64% (2 base * 8 eras * 4 delta); +112% Gold: 80% (20 base * 4 delta) + 32% (1 base * 8 eras * 4 delta) 
+-- +2 per difficulty to Food, Science, Culture and Gold
+-- Future (8 eras from beggining) Deity (4 Deltas from Prince) gets a total of 96% Science/Culture: 32% (8 base * 4 delta) + 64% (2 base * 8 eras * 4 delta) 
+-- +84% Food: 20% (5 base * 4 delta) + 64% (2 base * 8 eras * 4 delta); +144% Gold: 80% (20 base * 4 delta) + 64% (2 base * 8 eras * 4 delta) 
 -- +80% Production (stable through the game)
 INSERT INTO Modifiers 
 		(ModifierId,						ModifierType,											OwnerRequirementSetId) 
@@ -112,30 +112,30 @@ VALUES	('SCIENCE_SCALING_CLASSICAL',		'YieldType',	'YIELD_SCIENCE'),
 
 INSERT INTO ModifierArguments 
 		(ModifierId,						Name,		Type,								Value,	Extra) 
-VALUES	('SCIENCE_SCALING_CLASSICAL',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('SCIENCE_SCALING_MEDIEVAL',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('SCIENCE_SCALING_RENAISSANCE',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('SCIENCE_SCALING_INDUSTRIAL',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('SCIENCE_SCALING_MODERN',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('SCIENCE_SCALING_ATOMIC',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('SCIENCE_SCALING_INFO',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('SCIENCE_SCALING_FUTURE',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('CULTURE_SCALING_CLASSICAL',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('CULTURE_SCALING_MEDIEVAL',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('CULTURE_SCALING_RENAISSANCE',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('CULTURE_SCALING_INDUSTRIAL',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('CULTURE_SCALING_MODERN',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('CULTURE_SCALING_ATOMIC',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('CULTURE_SCALING_INFO',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('CULTURE_SCALING_FUTURE',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('GOLD_SCALING_CLASSICAL',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('GOLD_SCALING_MEDIEVAL',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('GOLD_SCALING_RENAISSANCE',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('GOLD_SCALING_INDUSTRIAL',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('GOLD_SCALING_MODERN',				'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('GOLD_SCALING_ATOMIC',				'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('GOLD_SCALING_INFO',				'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
-		('GOLD_SCALING_FUTURE',				'Amount',	'LinearScaleFromDefaultHandicap',	0,		1),
+VALUES	('SCIENCE_SCALING_CLASSICAL',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('SCIENCE_SCALING_MEDIEVAL',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('SCIENCE_SCALING_RENAISSANCE',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('SCIENCE_SCALING_INDUSTRIAL',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('SCIENCE_SCALING_MODERN',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('SCIENCE_SCALING_ATOMIC',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('SCIENCE_SCALING_INFO',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('SCIENCE_SCALING_FUTURE',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('CULTURE_SCALING_CLASSICAL',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('CULTURE_SCALING_MEDIEVAL',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('CULTURE_SCALING_RENAISSANCE',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('CULTURE_SCALING_INDUSTRIAL',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('CULTURE_SCALING_MODERN',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('CULTURE_SCALING_ATOMIC',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('CULTURE_SCALING_INFO',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('CULTURE_SCALING_FUTURE',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('GOLD_SCALING_CLASSICAL',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('GOLD_SCALING_MEDIEVAL',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('GOLD_SCALING_RENAISSANCE',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('GOLD_SCALING_INDUSTRIAL',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('GOLD_SCALING_MODERN',				'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('GOLD_SCALING_ATOMIC',				'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('GOLD_SCALING_INFO',				'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
+		('GOLD_SCALING_FUTURE',				'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
 		('FOOD_SCALING_CLASSICAL',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
 		('FOOD_SCALING_MEDIEVAL',			'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),
 		('FOOD_SCALING_RENAISSANCE',		'Amount',	'LinearScaleFromDefaultHandicap',	0,		2),

@@ -24,9 +24,9 @@ VALUES  ('LOW_DIFFICULTY_SCIENCE_SCALING',		'MODIFIER_PLAYER_CITIES_ADJUST_CITY_
 
 INSERT INTO	ModifierArguments 
 		('ModifierId',							'Name',			'Type',								'Value',			'Extra',	'SecondExtra')
-VALUES	('LOW_DIFFICULTY_SCIENCE_SCALING',		'Amount',		'LinearScaleFromDefaultHandicap',	0,					-12,		'DIFFICULTY_PRINCE'),
+VALUES	('LOW_DIFFICULTY_SCIENCE_SCALING',		'Amount',		'LinearScaleFromDefaultHandicap',	0,					-8,			'DIFFICULTY_PRINCE'),
 		('LOW_DIFFICULTY_SCIENCE_SCALING',		'YieldType',	'ARGTYPE_IDENTITY',					'YIELD_SCIENCE',	null,		null),
-		('LOW_DIFFICULTY_CULTURE_SCALING',		'Amount',		'LinearScaleFromDefaultHandicap',	0,					-12,		'DIFFICULTY_PRINCE'),
+		('LOW_DIFFICULTY_CULTURE_SCALING',		'Amount',		'LinearScaleFromDefaultHandicap',	0,					-8,			'DIFFICULTY_PRINCE'),
 		('LOW_DIFFICULTY_CULTURE_SCALING',		'YieldType',	'ARGTYPE_IDENTITY',					'YIELD_CULTURE',	null,		null),
 		('LOW_DIFFICULTY_FAITH_SCALING',		'Amount',		'LinearScaleFromDefaultHandicap',	0,					-8,			'DIFFICULTY_PRINCE'),
 		('LOW_DIFFICULTY_FAITH_SCALING',		'YieldType',	'ARGTYPE_IDENTITY',					'YIELD_FAITH',		null,		null),
