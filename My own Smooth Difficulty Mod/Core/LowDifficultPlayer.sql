@@ -8,11 +8,6 @@ UPDATE	RequirementArguments
 SET		Value='DIFFICULTY_PRINCE' 
 WHERE	RequirementId='REQUIRES_LOW_DIFFICULTY'; 
 
---Mirror AI *BASE* Values to Low Difficult Players
-UPDATE	ModifierArguments 
-SET		Extra = -10 
-WHERE	ModifierID = 'LOW_DIFFICULTY_UNIT_XP_SCALING';
-
 INSERT INTO		Modifiers 
 		('ModifierId',							'ModifierType',											'OwnerRequirementSetId')
 VALUES  ('LOW_DIFFICULTY_SCIENCE_SCALING',		'MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER',	'PLAYER_IS_LOW_DIFFICULTY_HUMAN'),

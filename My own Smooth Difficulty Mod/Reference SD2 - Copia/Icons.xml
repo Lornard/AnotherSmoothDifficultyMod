@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<GameInfo>
-	<IconDefinitions>
-		<Row Name="ICON_DIFFICULTY_DEMIGOD" Atlas="ICON_ATLAS_GAME_DIFFICULTY" Index="7"/>
-		<Row Name="ICON_DIFFICULTY_OMNISCIENT" Atlas="ICON_ATLAS_GAME_DIFFICULTY" Index="7"/>
-	</IconDefinitions>
-</GameInfo>
